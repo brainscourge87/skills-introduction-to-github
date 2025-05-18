@@ -45,6 +45,26 @@ In this exercise, you will:
 
 > [!IMPORTANT]
 > The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## Math App
+
+This repository also includes a simple command-line calculator. Run it with:
+
+```bash
+python math_app.py add 2 3
+```
+
+Replace `add` with `subtract`, `multiply`, or `divide` as needed.
+
+### Deploying to Vercel
+
+You can expose the calculator as a serverless API using Vercel. The function is
+located in `api/math.py`.
+
+1. Install the [Vercel CLI](https://vercel.com/docs/cli).
+2. From the repository root, run `vercel` and follow the prompts.
+3. After deployment, invoke it at
+   `https://<your-vercel-url>/api/math?operation=add&x=2&y=3`.
+
 
 ---
 
